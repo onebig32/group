@@ -29,7 +29,7 @@ class KktProductGroupPlan extends MModel
      */
     public function getGroup()
     {
-        return $this->hasMany('App\Models\Group\Orm\KktProductGroup', 'plan_id');
+        return $this->hasMany('Group\Repository\Orm\KktProductGroup', 'plan_id');
     }
 
     /**
@@ -53,7 +53,7 @@ class KktProductGroupPlan extends MModel
      */
     public function getDesignateUser()
     {
-        return $this->hasMany('App\Models\Group\Orm\KktProductGroupPlanDesignate', 'plan_id');
+        return $this->hasMany('Group\Repository\Orm\KktProductGroupPlanDesignate', 'plan_id');
     }
 
     /**
@@ -61,7 +61,7 @@ class KktProductGroupPlan extends MModel
      */
     public function getLog()
     {
-        return $this->hasMany('App\Models\Group\Orm\KktProductGroupPlanLog', 'plan_id');
+        return $this->hasMany('Group\Repository\Orm\KktProductGroupPlanLog', 'plan_id');
     }
 
     /**

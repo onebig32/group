@@ -15,14 +15,14 @@ class KktShelf extends MModel{
 	 * 定义与货架明细表一对多关系
 	 */
 	public function getDetail(){
-		return $this->hasMany('App\Models\Group\Orm\KktShelfDetail', 'shelf_id', 'id');
+		return $this->hasMany('Group\Repository\Orm\KktShelfDetail', 'shelf_id', 'id');
 	}
 
 	/**
 	 * 定义与货架价格表一对多关系
 	 */
 	public function getPrice(){
-		return $this->hasMany('App\Models\Group\Orm\KktShelfPrice', 'shelf_id', 'id');
+		return $this->hasMany('Group\Repository\Orm\KktShelfPrice', 'shelf_id', 'id');
 	}
 
 }

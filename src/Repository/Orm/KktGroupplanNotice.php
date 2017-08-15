@@ -14,6 +14,6 @@ class KktGroupplanNotice extends MModel{
 	 * 定义与团期计划的外键
 	 */
 	public function getPlan(){
-		return $this->belongsTo('App\Models\Group\Orm\KktProductGroupPlan', 'plan_id');
+		return $this->belongsTo('Group\Repository\Orm\KktProductGroupPlan', 'plan_id');
 	}
 }

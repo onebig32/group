@@ -16,19 +16,19 @@ class KktProductGroup extends MModel{
 	 * 定义关于行程方案的外键
 	 */
 	public function getTour(){
-		return $this->belongsTo('App\Models\Product\Orm\KktProductTour', 'tour_id');
+		return $this->belongsTo('Group\Repository\Orm\KktProductTour', 'tour_id');
 	}
 
     /**
      * 定义关于团期计划的外键
      */
 	public function getGroupPlan(){
-		return $this->belongsTo('App\Models\Group\Orm\KktProductGroupPlan', 'plan_id', 'id');
+		return $this->belongsTo('Group\Repository\KktProductGroupPlan', 'plan_id', 'id');
 	}
 	
 	//定义与团期表一对一关系
 	public function getPlan(){
-	    return $this->hasOne('App\Models\Group\Orm\KktProductGroupPlan', 'id', 'plan_id');
+	    return $this->hasOne('Group\Repository\KktProductGroupPlan', 'id', 'plan_id');
 	}
 	//定义与产品表一对一关系
 	public function getProduct(){

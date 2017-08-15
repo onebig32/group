@@ -15,7 +15,7 @@ class KktProductGroupPlanLog extends MModel{
 	 * 定义外键
 	 */
 	public function planData(){
-		return $this->belongsTo('App\Models\Group\Orm\Group', 'plan_id');
+		return $this->belongsTo('Group\Repository\Orm\Group', 'plan_id');
 	}
 	
 	/**
