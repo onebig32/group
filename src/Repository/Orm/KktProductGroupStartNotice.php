@@ -1,5 +1,5 @@
 <?php
-namespace App\Models\Group\Orm;
+namespace Group\Repository\Orm;
 
 use App\Models\MModel;
 
@@ -9,4 +9,5 @@ class KktProdcutGroupStartNocie extends MModel{
 		'tour_id','plan_id','path','group','name',
 		'is_delete'	
 	];
+	protected $connection = "mysql_platform";
 }	

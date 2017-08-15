@@ -3,15 +3,15 @@
  * 会销活动管理
  * 功能 1.保存团期活动库存记录 2.更新团期活动库存
  ******************************************************/
-namespace App\Models\Group\Services;
+namespace Group\Services\Manager;
 
-use App\Models\Group\Exceptions\GroupException;
 use App\Models\BusinessService;
 use App\Models\Commons\TraitValidate;
-use App\Models\Group\Exceptions\PromotionException;
-use App\Models\Group\Exceptions\ShelfException;
-use App\Models\Group\Interfaces\ShelfManager;
-use App\Models\Group\Orm\KktProductGroupPlan;
+use Group\Business\Exceptions\GroupException;
+use Group\Business\Exceptions\PromotionException;
+use Group\Business\Exceptions\ShelfException;
+use Group\Services\Manager\ShelfManager;
+use Group\Repository\Orm\KktProductGroupPlan;
 use DB;
 
 class PromotionManager extends BusinessService

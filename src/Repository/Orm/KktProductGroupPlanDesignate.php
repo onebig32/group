@@ -1,5 +1,5 @@
 <?php
-namespace App\Models\Group\Orm;
+namespace Group\Repository\Orm;
 
 use App\Models\MModel;
 use App\Models\User\Interfaces\SystemUser;
@@ -11,7 +11,7 @@ class KktProductGroupPlanDesignate extends MModel
     protected $fillable = [
         'plan_id', 'user_id', 'organization_id' ,'created_user_id', 'created_organization_id','created_at','updated_at','is_delete'
     ];
-
+    protected $connection = "mysql_platform";
     /**
      * 获取团期指派列表
      * @param array $wh 查询条件

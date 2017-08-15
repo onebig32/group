@@ -1,5 +1,5 @@
 <?php
-namespace App\Models\Group\Orm;
+namespace Group\Repository\Orm;
 
 use App\Models\MModel;
 
@@ -11,5 +11,5 @@ class KktShelfPrice extends MModel{
 			'shelf_id','group_id','plan_id','adult_price','child_price','deposit_money',
 			'is_delete','created_at','updated_at'
 	];
-	
+	protected $connection = "mysql_platform";
 }

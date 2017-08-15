@@ -9,7 +9,7 @@ class KktGroupplanNotice extends MModel{
 		'gather_address', 'donw_name', 'path_name', 'path_group',
 		'is_delete'
 	];
-	
+	protected $connection = "mysql_platform";
 	/**
 	 * 定义与团期计划的外键
 	 */

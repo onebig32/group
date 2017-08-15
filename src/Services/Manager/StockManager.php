@@ -5,12 +5,12 @@
  ******************************************************/
 namespace App\Models\Group\Services;
 
-use App\Models\Group\Exceptions\GroupException;
-use App\Models\Group\Exceptions\ShelfException;
-use App\Models\Group\Interfaces\ShelfManager;
-use App\Models\Group\Orm\KktGroupplanStockLog;
-use App\Models\Group\Orm\KktGroupplanStockProof;
-use App\Models\Group\Orm\KktProductGroupPlan;
+use Group\Business\Exceptions\GroupException;
+use Group\Business\Exceptions\ShelfException;
+use Group\Service\Manager\ShelfManager;
+use Group\Repository\Orm\KktGroupplanStockLog;
+use Group\Repository\Orm\KktGroupplanStockProof;
+use Group\Repository\Orm\KktProductGroupPlan;
 use Cache;
 use DB;
 

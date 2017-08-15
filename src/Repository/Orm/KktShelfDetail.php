@@ -1,5 +1,5 @@
 <?php
-namespace App\Models\Group\Orm;
+namespace Group\Repository\Orm;
 
 use App\Models\MModel;
 
@@ -10,7 +10,7 @@ class KktShelfDetail extends MModel{
 	protected $fillable = [
 			'shelf_id','plan_id','take_stock','is_delete','created_at','updated_at'
 	];
-
+	protected $connection = "mysql_platform";
 	/**
 	 * 获取货架明细列表
 	 * @param array $wh 查询条件

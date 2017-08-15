@@ -1,5 +1,5 @@
 <?php
-namespace App\Models\Group\Orm;
+namespace Group\Repository\Orm;
 
 use App\Models\MModel;
 use App\Models\User\Interfaces\SystemUser;
@@ -10,7 +10,7 @@ class KktProductGroupPlanLog extends MModel{
 	protected $fillable = [
 	    'created_user_id', 'plan_id', 'content', 'created','type'
 	];
-	
+	protected $connection = "mysql_platform";
 	/**
 	 * 定义外键
 	 */

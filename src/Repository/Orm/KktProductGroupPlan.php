@@ -1,5 +1,5 @@
 <?php
-namespace App\Models\Group\Orm;
+namespace Group\Repository\Orm;
 
 use App\Models\MModel;
 use App\Models\User\Interfaces\SystemUser;
@@ -23,7 +23,7 @@ class KktProductGroupPlan extends MModel
     	'is_close', 'close_content', 'updatetime',
     	'created_organization_id','name','self_built','version_f','uuid','created_at','updated_at'
     ];
-
+    protected $connection = "mysql_platform";
     /**
      * 定义一对多关系
      */

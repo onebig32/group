@@ -1,5 +1,5 @@
 <?php
-namespace App\Models\Group\Orm;
+namespace Group\Repository\Orm;
 
 use App\Models\MModel;
 use DB;
@@ -11,6 +11,7 @@ class KktGroupplanStockProof extends MModel
         'stock', 'type', 'plan_id', 'order_uuid',
         'created_at', 'updated_at','shelf_id'
     ];
+    protected $connection = "mysql_platform";
 
     /**
      * 获取库存凭证汇总数据列表

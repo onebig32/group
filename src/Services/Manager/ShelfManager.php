@@ -3,15 +3,15 @@
  * 产品团期子系统（团期）--货架管理。拥有分配团期库存职责。
  * 主要功能：货架库存调整
  */
-namespace App\Models\Group\Interfaces;
+namespace Group\Services\Manager;
 
 use App\Models\BusinessService;
-use App\Models\Group\Exceptions\GroupException;
-use App\Models\Group\Exceptions\ShelfException;
-use App\Models\Group\Orm\KktProductGroupPlan;
-use App\Models\Group\Orm\KktShelf;
-use App\Models\Group\Orm\KktShelfDetail;
-use App\Models\Group\Orm\KktShelfPrice;
+use Group\Business\Exceptions\GroupException;
+use Group\Business\Exceptions\ShelfException;
+use Group\Repository\Orm\KktProductGroupPlan;
+use Group\Repository\Orm\KktShelf;
+use Group\Repository\Orm\KktShelfDetail;
+use Group\Repository\Orm\KktShelfPrice;
 
 class ShelfManager extends BusinessService
 {

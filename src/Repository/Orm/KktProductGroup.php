@@ -1,5 +1,5 @@
 <?php 
-namespace App\Models\Group\Orm;
+namespace Group\Repository\Orm;
 use App\Models\MModel;
 
 class KktProductGroup extends MModel{
@@ -11,7 +11,7 @@ class KktProductGroup extends MModel{
 		'child_retail_sale', 'prepay_money', 'created',
 		'updated', 'is_delete','uuid'
 	];
-	
+	protected $connection = "mysql_platform";
 	/**
 	 * 定义关于行程方案的外键
 	 */

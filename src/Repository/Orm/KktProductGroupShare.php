@@ -1,5 +1,5 @@
 <?php
-namespace App\Models\Group\Orm;
+namespace Group\Repository\Orm;
 
 use App\Models\MModel;
 
@@ -10,7 +10,7 @@ class KktProductGroupShare extends MModel
     protected $fillable = [
         'sale_user_id', 'group_id', 'share_price', 'is_delete',
     ];
-
+    protected $connection = "mysql_platform";
     /**
      * 获取分销商修改后分享价格
      * @param $userId      用户id

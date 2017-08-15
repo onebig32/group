@@ -1,5 +1,5 @@
 <?php
-namespace App\Models\Group\Orm;
+namespace Group\Repository\Orm;
 
 use App\Models\MModel;
 
@@ -10,6 +10,7 @@ class KktShelf extends MModel{
 			'name','link_type','link_uuid','created_user_id','created_organization_id',
 			'is_delete','created_at','updated_at'
 	];
+	protected $connection = "mysql_platform";
 	/**
 	 * 定义与货架明细表一对多关系
 	 */
